@@ -12,52 +12,6 @@
     <script type="text/javascript" src="funciones.js"></script>
 
 
-    <script>
-    function SoloLetras(e)
-    key=e.keyCode || e.which;
-    tecla = String.fromCharCode(key).toString();
-    letras= "ABCDFGHIJKLMNOPQRSWYXZabcdfghijklmnopqwswyxz";
-
-    especiales = [8,13];
-    tecla_especial = false;
-    for(var i in especiales){
-      if(key == especiales[i]){
-        tecla_especial = true;
-        break;
-
-
-      }
-    }
-
-     if(letras.IndexOf(tecla) == -1 )
-
-
-$(function(){
-
-  $('.validanumericos').keypress(function(e) {
-	if(isNaN(this.value + String.fromCharCode(e.charCode))) 
-     return false;
-  })
-  .on("cut copy paste",function(e){
-	e.preventDefault();
-  });
-
-});
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </head>
   <body data-home-page="Página-1.html" data-home-page-title="Página 1" class="u-body u-xl-mode">
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_e013">
