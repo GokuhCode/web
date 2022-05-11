@@ -157,8 +157,9 @@
   }
 
   .bordered {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    background-color: #ed5d19;
+    border: 1px solid #f11111;
+    color: #fffcfc;
   }
 
   .bg-color {
