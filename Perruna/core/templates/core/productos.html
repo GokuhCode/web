@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<style>
+
+  .productostab{
+
+    margin-top: 20%;
+  }
+
+</style>
+<table class="productostab">
+  <tr>
+    <th>nombre</th>
+    <th>categoria</th>
+    <th>precio</th>
+  </tr>
+ {% for p in Productos %}
+  <tr>
+     <td>{{p.nombre}}</td>
+     <td>{{p.categoria}}</td>
+     <td>{{p.precio}}</td>
+  </tr>
+  {% endfor%}
+ </table>
+
+{% endblock contenido %}

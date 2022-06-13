@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--
+Cabezera de la pagina, titulo y vinculaciones css
+-->
+     <title>Decora tu mascota</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     {% load static %}
+     <link rel="stylesheet" href="{% static 'core/'%}css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'core/'%}css/font-awesome.min.css">
+     <link rel="stylesheet" href="{% static 'core/'%}css/aos.css">
+          <link rel="stylesheet" href="{% static 'core/'%}QuienSomos/assets/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="{% static 'core/'%}QuienSomos/assets/dist/css/bootstrap.min.css.map">
+          <link rel="stylesheet" href="{% static 'core/'%}QuienSomos/assets/dist/css/bootstrap.rtl.min.css">
+          <link rel="stylesheet" href="{% static 'core/'%}QuienSomos/assets/dist/css/bootstrap.rt.min.css.map">
+
+     <!--  CSS -->
+     <link rel="stylesheet" href="{% static 'core/'%}css/paginaestilo.css">
+<!--
+Estructura Pagina perruna
+-->
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Poductos Mascota</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000" class="nav-link smoothScroll">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/" class="nav-link smoothScroll">Modalidad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#productos" class="nav-link smoothScroll">Productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/quienessomos/" class="nav-link smoothScroll">Quienes somos?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/Contacto/" class="nav-link smoothScroll">Contacto</a>
+                    </li>
+                </ul>
+
+                <ul class="social-icon ml-lg-3">
+                    <li><a href="https://es-la.facebook.com/DuocUC/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/DuocUC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/duocuc_cl/?hl=es" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <div id="principal">
+     <br>
+        {% block contenido  %}
+           
+        {% endblock contenido  %}
+
+     </div>
+
+
+
+     <!-- FOOTER -->
+     <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text">Copyright &copy; Derecho Reservado para grupo los mas rankiao.
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">Estudiantes duoc uc</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i> +5695543241 - 442341235</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <!-- Modal -->
+     <!-- SCRIPTS -->
+     <script src="{% static 'core/'%}js/jquery.min.js"></script>
+     <script src="{% static 'core/'%}js/bootstrap.min.js"></script>
+     <script src="{% static 'core/'%}js/aos.js"></script>
+     <script src="{% static 'core/'%}js/smoothscroll.js"></script>
+     <script src="{% static 'core/'%}js/custom.js"></script>
+
+</body>
+</html>
