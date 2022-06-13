@@ -1,0 +1,54 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block contenido %}
+
+
+
+<style>
+ 
+.row2{
+    margin-top: 14.5%;
+    margin-left: 20%;
+
+}
+
+.col-4{
+     margin-top: 10%;
+}
+
+
+
+
+</style>
+
+
+<div class="row">
+  <div class = "col-8">
+    <div class="row" style ="padding: 10px 0;">
+      <div class="col-12">
+        <div class="row2">
+         {%for producto in productos %}
+         <div class = "col-6">
+          <div class ="card" style="height_ 10rem; width: 23rem; margin: 5px 0px;">
+           <div class= "card-body">
+             <h5 class="card-tittle">{{producto.nombre}}</h5>
+             <p class="card-text">{{producto.categoria}}</p>
+             <p class="card-text">{{producto.precio}}</p>
+             <a href="#" class="btn btn-primary">agregar al carrito</a>
+            </div>
+          </div>
+         </div>
+         {%endfor%}
+        </div>
+      </div>
+    </div>
+  </div>
+<div class = "col-4">
+  carrito
+</div>
+</div> 
+</div>
+
+
+
+{% endblock contenido %}
