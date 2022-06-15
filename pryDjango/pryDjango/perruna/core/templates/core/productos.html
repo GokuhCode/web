@@ -21,6 +21,11 @@
      <td>{{p.nombre}}</td>
      <td>{{p.categoria}}</td>
      <td>{{p.precio}}</td>
+
+     <td>
+        <a href="{% url 'modificar_producto' p.id %}">Modificar</a>
+        <a href="{% url 'eliminar_producto' p.id %}">Eliminar</a>
+     </td>
   </tr>
   {% endfor%}
  </table>
