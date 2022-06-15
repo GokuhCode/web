@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--
+Cabezera de la pagina, titulo y vinculaciones css
+-->
+     <title>Decora tu mascota</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     {% load static %}
+     <link rel="stylesheet" href="{% static 'core/'%}css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'core/'%}css/font-awesome.min.css">
+     <link rel="stylesheet" href="{% static 'core/'%}css/aos.css">
+
+     <!--  CSS -->
+     <link rel="stylesheet" href="{% static 'core/'%}css/paginaestilo.css">
+<!--
+Estructura Pagina perruna
+-->
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Poductos Mascota</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000" class="nav-link smoothScroll">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#modalidad" class="nav-link smoothScroll">Modalidad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#productos" class="nav-link smoothScroll">Productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/quienessomos/" class="nav-link smoothScroll">Quienes somos?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/Contacto/" class="nav-link smoothScroll">Contacto</a>
+                    </li>
+                </ul>
+
+              
+            </div>
+
+        </div>
+    </nav>
+
+    <!--
+        Sesion iniciar sesion
+        -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center" id="inicio">
+     
+        
+            <div class="bg-overlay"></div>
+
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-8 col-md-10 mx-auto col-12">
+                              <div class="hero-text mt-5 text-center">
+
+                                   
+
+                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Bienvenido a producto mascotas</h1>
+
+                                    <a href="http://127.0.0.1:8000/login/" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Iniciar Sesion</a>
+
+                                    <a href="http://127.0.0.1:8000/login/" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Registrarse</a>
+                                   
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <section class="feature" id="feature">
+        <div class="container">
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Productos Para tu mascota</h2>
+
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Precios desde ($1.000)</h6>
+
+                    <p data-aos="fade-up" data-aos-delay="200">Lindos para tus mascotas, hacete miembro y te agregaremos a una comunidad con ofertas especiales <a rel="nofollow" href="https://www.tooplate.com" target="_parent"></a> </p>
+
+                    <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Hacete miembro hoy</a>
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                     <div class="about-working-hours">
+                          <div>
+
+                                <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Nuestra atencion</h2>
+
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Domingo : Cerrado</strong>
+
+                               <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Lunes - Vierde</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">7:00 AM - 10:00 PM</p>
+
+                                <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">sabado</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">6:00 AM - 4:00 PM</p>
+                               </div>
+                          </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Informacion -->
+     <section class="about section" id="modalidad">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hola, Aqui encontraras diversos producto para tu mascota</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="400"> Puedes venir a probar vestimenta sin ningun compromiso, tenemos vestimenta para mascotas como perros,gatos,tortugas,urones,hamster,etc</p>
+
+                                <p data-aos="fade-up" data-aos-delay="500">Puedes consultar en nuestro correo <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">MascotaVenta@ventas.cl</a>, nuestro personal <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contactara</a> en la brevedad posible.</p>
+
+                            </div>
+
+                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                                <div class="team-thumb">
+                                    <img src="{% static 'core/'%}images/team/team-image.jpg" class="img-fluid" alt="Perrito">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        <h3>Mary Yan</h3>
+                                        <span>Darla Modelo</span>
+
+                                        <ul class="social-icon mt-3">
+ 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+                                <div class="team-thumb">
+                                    <img src="{% static 'core/'%}images/team/team-image01.jpg" class="img-fluid" alt="Perrito">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        <h3>Scrappy</h3>
+                                        <span>Perrito</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- Productos-->
+     <section class="class section" id="productos">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center mb-5">
+                                <h6 data-aos="fade-up">Ofertas de la semana</h6>
+
+                                <h2 data-aos="fade-up" data-aos-delay="200">Nuestros productos destacados</h2>
+                             </div>
+
+                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                                <div class="class-thumb">
+                                    <img src="{% static 'core/'%}images/class/producto1.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Arenero gatos</h3>
+
+                                        <span><strong>Producto para</strong> - Gatos</span>
+
+
+                                        <p class="mt-3">Catit SmartSift es la gatera más moderna y revolucionaria del mundo, especialmente creada para los más limpios. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="class-thumb">
+                                    <img src="{% static 'core/'%}images/class/producto2.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Cinturon para Perros</h3>
+
+                                        <span><strong>Producto para</strong> - Perros</span>
+
+
+                                        <p class="mt-3">Muy fácil de colocar, con solo dos clips en el cofre. Cómoda almohadilla para el pecho acolchada y conveniente para ajustar con sus cinco puntos de ajuste. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="class-thumb">
+                                    <img src="{% static 'core/'%}images/class/producto3.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Fuente Bebedera</h3>
+
+                                        <span><strong>Producto para</strong> - Gatos</span>
+
+                                        <p class="mt-3">Los gatos sedientos necesitan agua fresca y en movimiento. La Catit Mini Flower Fountain tiene 3 configuraciones diferentes: un flujo de agua suave, una parte superior burbujeante o chorros tranquilos.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- CONTACTO -->
+     <section class="contact section" id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">No dudes en escribirnos</h2>
+
+                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <input type="text" class="form-control" name="cf-name" placeholder="Nombre">
+
+                            <input type="email" class="form-control" name="cf-email" placeholder="Correo">
+
+                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Mensaje"></textarea>
+
+                            <button type="submit" class="form-control" id="submit-button" name="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Encuentranos <span> en </span></h2>
+
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> Duoc uc Concepcion </p>
+<!-- How to change your own map point
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.967443053008!2d-73.06476148493225!3d-36.79533097994958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b4503c9a1735%3A0x3fc32996839e6986!2sDuoc%20UC%3A%20Sede%20San%20Andr%C3%A9s%20De%20Concepci%C3%B3n!5e0!3m2!1ses-419!2sus!4v1648667504678!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- FOOTER -->
+     <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text">Copyright &copy; Derecho Reservado para grupo los mas rankiao.
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">Estudiantes duoc uc</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i> +5695543241 - 442341235</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h2 class="modal-title" id="membershipFormLabel">Subcripciones</h2>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="membership-form webform" role="form">
+                <input type="text" class="form-control" name="cf-name" placeholder="Patricio Nuñez">
+
+                <input type="email" class="form-control" name="cf-email" placeholder="patonuñez@gmail.com">
+
+                <input type="tel" class="form-control" name="cf-phone" placeholder="+56943562314" pattern="" required>
+
+                <textarea class="form-control" rows="3" name="cf-message" placeholder="Mensaje adiccional"></textarea>
+
+                <button type="submit" class="form-control" id="submit-button" name="submit">Enviar</button>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="signup-agree">
+                    <label class="custom-control-label text-small text-muted" for="signup-agree">He leido y acepto <a href="#">los terminos de condiciones</a>
+                    </label>
+                </div>
+            </form>
+          </div>
+
+          <div class="modal-footer"></div>
+
+        </div>
+      </div>
+    </div>
+
+     <!-- SCRIPTS -->
+     <script src="{% static 'core/'%}js/jquery.min.js"></script>
+     <script src="{% static 'core/'%}js/bootstrap.min.js"></script>
+     <script src="{% static 'core/'%}js/aos.js"></script>
+     <script src="{% static 'core/'%}js/smoothscroll.js"></script>
+     <script src="{% static 'core/'%}js/custom.js"></script>
+
+</body>
+</html>
