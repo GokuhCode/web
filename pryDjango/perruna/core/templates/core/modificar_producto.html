@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+
+<h2>Modificar productos<h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    
+    <input type="reset" value="Limpiar">
+    <input type="submit" value="Modificar">
+</form>
+
+{{mensaje}}
+    
+
+{% endblock contenido %}
+
